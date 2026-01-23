@@ -19,6 +19,7 @@ BESCHREIBUNG
     (Kann in der OpenScape 4000 im Assistant herunter geladen werden)
 
 HAUPTFUNKTIONEN:
+
     1. Cross-Site Logic: Teilnehmer werden nur in den Standorten als interne Regel hinterlegt,
        denen sie NICHT angehören (verhindert Routing-Schleifen).
     2. RegEx-Kompression: Fasst Tisch- und Softphone-Nummern (Präfix 7) zu einer Regel
