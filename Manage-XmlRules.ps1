@@ -74,7 +74,7 @@
     Zeigt die vollständige Dokumentation des Skripts an.
 
 .NOTES
-    VERSION: 1.0 (Meilenstein 7)
+    VERSION: 1.0 (Meilenstein 8)
     AUTHOR: Boris Hürtgen
     LICENSE: MIT License
     COLLABORATION: Created with the assistance of Google Gemini.
