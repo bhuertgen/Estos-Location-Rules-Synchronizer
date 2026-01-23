@@ -11,13 +11,14 @@ SYNTAX
 
 
 BESCHREIBUNG
+
     Dieses Skript synchronisiert Teilnehmerdaten aus einer OpenScape 4000 (via api2hipath.exe)
     mit der Konfigurationsdatei 'locations.xml' des Estos UCServers.
 
     Es wird noch das Externe Tool api2hipath.exe benötigt, dieses muss vorab installiert werden
     (Kann in der OpenScape 4000 im Assistant herunter geladen werden)
 
-    HAUPTFUNKTIONEN:
+HAUPTFUNKTIONEN:
     1. Cross-Site Logic: Teilnehmer werden nur in den Standorten als interne Regel hinterlegt,
        denen sie NICHT angehören (verhindert Routing-Schleifen).
     2. RegEx-Kompression: Fasst Tisch- und Softphone-Nummern (Präfix 7) zu einer Regel
