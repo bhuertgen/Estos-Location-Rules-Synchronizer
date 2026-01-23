@@ -3,6 +3,7 @@
 
 
 SYNTAX
+
     Manage-XmlRules.ps1 [[-Action] <String>]
     [[-Value] <String>] [[-Replace] <String>] [[-CityCode] <String>] [[-SoftphonePrefix] <String>] [[-Path] <String>]
     [[-CSVPath] <String>] [[-LogPath] <String>] [[-ApiExe] <String>] [[-ApiUser] <String>] [[-ApiPass] <String>]
