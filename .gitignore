@@ -1,0 +1,12 @@
+# Logs
+*.log
+sync_log.txt
+
+# Backups
+*.bak
+locations-*.xml
+PORT-*.csv
+
+# Temporäre Daten
+PORT.csv
+locations.xml
