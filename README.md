@@ -1,12 +1,9 @@
-AME
-    C:\Users\huertgen\Documents\GitHub\Estos-Location-Rules-Synchronizer\Manage-XmlRules.ps1
-
 ÜBERSICHT
     Estos Location Rules Synchronizer - Automatisiertes Standort-Routing für ProCall 8.
 
 
 SYNTAX
-    C:\Users\huertgen\Documents\GitHub\Estos-Location-Rules-Synchronizer\Manage-XmlRules.ps1 [[-Action] <String>]
+    Manage-XmlRules.ps1 [[-Action] <String>]
     [[-Value] <String>] [[-Replace] <String>] [[-CityCode] <String>] [[-SoftphonePrefix] <String>] [[-Path] <String>]
     [[-CSVPath] <String>] [[-LogPath] <String>] [[-ApiExe] <String>] [[-ApiUser] <String>] [[-ApiPass] <String>]
     [[-ApiHost] <String>] [[-Delimiter] <String>] [-SkipApi] [-OnlyApi] [<CommonParameters>]
