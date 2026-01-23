@@ -82,7 +82,7 @@
     WARNUNG: Während schreibender Zugriffe muss der Dienst 'eucsrv' beendet sein!
 
 .LINK
-    https://github.com/bhuertgen/estos-sync (Beispiel-Link)
+    https://github.com/bhuertgen/Estos-Location-Rules-Synchronizer/wiki
 #>
 
 # --- COPYRIGHT & LIZENZ ---
