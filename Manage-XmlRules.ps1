@@ -198,12 +198,17 @@ $validCityCodes = $allLocations.CityCode
 # Helfer-Logik
 function Get-PrefixFromE164($e164, $ext) { $prefix = $e164 -replace "$($ext)$", ""; return "+$prefix\1" }
 function Get-BaseExtension($ext, $prefix) { if ($ext.StartsWith($prefix) -and $ext.Length -gt $prefix.Length) { return $ext.Substring($prefix.Length) }; return $ext }
+function Validate-CSV($e164, $ext) { if($($e164).Substring(9) -notmatch $ext){Write-Log "Nebenstelle $ext passt nicht zu Rufnummer $e164" "WARNING"}}
 
 # --- SYNC AKTION ---
 if ($Action -eq "Sync") {
     if (-not (Test-Path $CSVPath)) { Write-Log "CSV fehlt!" "ERROR"; return }
     $csvData = Import-Csv -Path $CSVPath -Delimiter $Delimiter | Where-Object { $_.extension -and $_.e164_num }
     Write-Log "Starte Synchronisation (GUI-Schutz aktiv)..."
+
+    foreach ($csvLine in $csvData) {
+        Validate-CSV $csvLine.e164_num $csvLine.extension
+    }
 
     $globalAdded = 0; $globalDeleted = 0; $statsTable = @()
     $escapedPrefix = [regex]::Escape($SoftphonePrefix)
