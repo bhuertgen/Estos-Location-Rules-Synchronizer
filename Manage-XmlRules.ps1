@@ -198,7 +198,11 @@ $validCityCodes = $allLocations.CityCode
 # Helfer-Logik
 function Get-PrefixFromE164($e164, $ext) { $prefix = $e164 -replace "$($ext)$", ""; return "+$prefix\1" }
 function Get-BaseExtension($ext, $prefix) { if ($ext.StartsWith($prefix) -and $ext.Length -gt $prefix.Length) { return $ext.Substring($prefix.Length) }; return $ext }
-function Validate-CSV($e164, $ext) { if($($e164).Substring(9) -notmatch $ext){Write-Log "Nebenstelle $ext passt nicht zu Rufnummer $e164" "WARNING"}}
+function Validate-CSV($e164, $ext) { 
+    if (-not $e164.EndsWith($ext)) {
+        Write-Log "Nebenstelle $ext passt nicht zu Rufnummer $e164" "WARNING"
+    }
+}
 
 # --- SYNC AKTION ---
 if ($Action -eq "Sync") {
