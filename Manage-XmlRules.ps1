@@ -66,11 +66,11 @@
     Überspringt den API-Download und nutzt die lokal vorhandene PORT.csv für den Sync.
 
 .EXAMPLE
-    .\Manage-XmlRules6.ps1 -Action Sync
+    .\Manage-XmlRules.ps1 -Action Sync
     Führt einen vollständigen nächtlichen Abgleich durch.
 
 .EXAMPLE
-    Get-Help .\Manage-XmlRules6.ps1 -Full
+    Get-Help .\Manage-XmlRules.ps1 -Full
     Zeigt die vollständige Dokumentation des Skripts an.
 
 .NOTES
