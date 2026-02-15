@@ -503,6 +503,6 @@ net start eucsrv
 
 MIT License — (c) 2026 Boris Hürtgen
 
-Erstellt in Zusammenarbeit mit Google Gemini.
+Erstellt in Zusammenarbeit mit Google Gemini und aktualisiert auf GitHub via Claude Code.
 
 [Wiki](https://github.com/bhuertgen/Estos-Location-Rules-Synchronizer/wiki) · [Issues](https://github.com/bhuertgen/Estos-Location-Rules-Synchronizer/issues) · [Lizenz](LICENSE)
