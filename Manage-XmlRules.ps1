@@ -57,10 +57,10 @@
     Hostname oder IP-Adresse des OpenScape 4000 Assistant.
 
 .PARAMETER ApiUser
-    API-Benutzername (Standard: 'engr').
+    API-Benutzername für den OpenScape 4000 Assistant.
 
 .PARAMETER ApiPass
-    API-Passwort (Standard: '13370*').
+    API-Passwort für den OpenScape 4000 Assistant.
 
 .PARAMETER SkipApi
     Überspringt den API-Download und nutzt die lokal vorhandene PORT.csv für den Sync.

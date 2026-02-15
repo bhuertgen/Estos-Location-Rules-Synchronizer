@@ -10,3 +10,6 @@ PORT-*.csv
 # Temporäre Daten
 PORT.csv
 locations.xml
+
+# Claude Code (lokale Einstellungen)
+.claude/

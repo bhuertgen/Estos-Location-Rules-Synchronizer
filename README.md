@@ -435,7 +435,7 @@ REM UCServer-Dienst stoppen
 net stop eucsrv
 
 REM Synchronisation durchführen
-powershell.exe -ExecutionPolicy Bypass -File "C:\Scripts\Manage-XmlRules.ps1" -Action Sync -ApiHost "10.1.2.3" -ApiUser "engr" -ApiPass "13370*"
+powershell.exe -ExecutionPolicy Bypass -File "C:\Scripts\Manage-XmlRules.ps1" -Action Sync -ApiHost "10.1.2.3" -ApiUser "apiuser" -ApiPass "apipass"
 
 REM UCServer-Dienst starten
 net start eucsrv
